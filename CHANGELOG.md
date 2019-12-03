@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/alvaroraminelli/akala-design/compare/v0.1.6...v0.1.7) (2019-12-03)
+
+
+### Bug Fixes
+
+* improving config ([83acfe8](https://github.com/alvaroraminelli/akala-design/commit/83acfe894415ba7e0af7b812aca1722a474943d7))
+
 ### 0.1.6 (2019-12-03)
 
 
