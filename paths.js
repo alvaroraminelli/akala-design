@@ -11,6 +11,6 @@ const PATHS = {
   packages: path.join(root, 'packages')
 };
 
-PATHS.index = path.join(PATHS.src, 'index.ts');
+PATHS.index = path.join(PATHS.src, 'index.js');
 
 module.exports = PATHS;

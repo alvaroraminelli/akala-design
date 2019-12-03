@@ -1,12 +1,14 @@
 {
   "name": "akala-design",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "dependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
     "@stardust-ui/react": "^0.40.4",
     "@stardust-ui/react-component-ref": "^0.40.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "react": "^16.12.0",
@@ -20,7 +22,8 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -cw",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "release": "standard-version"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,8 +46,11 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-typescript": "^1.0.1",
     "rollup-watch": "^4.3.1",
+    "standard-version": "^7.0.1",
+    "styled-jsx": "^3.2.4",
     "tslib": "^1.10.0",
     "typescript": "^3.7.2",
     "typings": "^2.1.1"
