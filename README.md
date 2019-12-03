@@ -6,3 +6,9 @@ https://medium.com/@dandobusiness/setting-up-a-react-typescript-storybook-projec
 # Install roolup
 `npm i -D babel-core babel-plugin-external-helper babel-preset-latest babel-preset-react babel-preset-stage-1`
 `npm i -D rollup rollup-plugin-babel rollup-plugin-commonjs rollup-plugin-node-resolve`
+
+import Button from './components/Button';
+
+export {
+  Button,
+};

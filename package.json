@@ -1,20 +1,24 @@
 {
-  "name": "@akala-design",
-  "version": "0.1.0",
+  "name": "akala-design",
+  "version": "0.1.2",
   "private": false,
   "main": "dist/index.js",
-	"module": "dist/index.es.js",
+  "module": "dist/index.es.js",
   "dependencies": {
+    "@stardust-ui/react": "^0.40.4",
+    "@stardust-ui/react-component-ref": "^0.40.0",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"
   },
   "repository": {
-		"type": "git",
-		"url": "https://github.com/ali-kamalizade/text-select.git"
-	},
+    "type": "git",
+    "url": "https://github.com/alvaroraminelli/akala-design.git"
+  },
   "scripts": {
-    "build": "rollup -c && tsc",
+    "build": "rollup -c",
     "build:watch": "rollup -cw",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },

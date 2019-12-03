@@ -16,4 +16,4 @@ Button.defaultProps = {
 };
 
 export { Button };
-//# sourceMappingURL=index.esm.js.map
+//# sourceMappingURL=index.es.js.map

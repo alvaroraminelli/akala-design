@@ -8,6 +8,7 @@
     "moduleResolution": "node",
     "noImplicitAny": true,
     "outDir": "./dist",
+    "allowSyntheticDefaultImports":true,
     "preserveConstEnums": true,
     "target": "es5"
   },

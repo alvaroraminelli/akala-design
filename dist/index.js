@@ -20,4 +20,4 @@ Button.defaultProps = {
 };
 
 exports.Button = Button;
-//# sourceMappingURL=index.cjs.js.map
+//# sourceMappingURL=index.js.map
