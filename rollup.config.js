@@ -15,7 +15,7 @@ export default {
     // { file: 'dist/index.umd.js', format: 'umd', sourcemap: false, name: 'akaladesign' },
     // { file: 'dist/index.esm.js', format: 'esm', sourcemap: false },
     // { file: 'dist/index.iife.js', format: 'iife', sourcemap: false, name: 'akaladesign' },
-    { file: 'dist/index.cjs.js', format: 'cjs', sourcemap: false }
+    { file: pkg.main, format: 'cjs', sourcemap: true }
   ],
   plugins: [
   //   replace({
