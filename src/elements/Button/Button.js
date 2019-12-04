@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-// class Button extends Component {
+// export class ButtonComponent extends Component {
 //   render(){
 //     return (
 //       <div>Button</div>
 //     )
 //   }
 // }
-const Button = () => <div>Button</div>;
+
+const Button = ({children}) => <div>{children}</div>;
 
 export default Button;

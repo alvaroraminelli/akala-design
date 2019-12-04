@@ -1,5 +1,1 @@
-import Button from './elements/Button/Button';
-
-export {
-  Button,
-};
+export Button from './elements/Button/Button';
