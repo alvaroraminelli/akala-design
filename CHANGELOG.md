@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/alvaroraminelli/akala-design/compare/v0.1.8...v0.1.9) (2019-12-04)
+
+
+### Bug Fixes
+
+* fixing rollup ([a4d38db](https://github.com/alvaroraminelli/akala-design/commit/a4d38dbb6e9ef1270bcc9363b3ba52c29297a035))
+
 ### [0.1.8](https://github.com/alvaroraminelli/akala-design/compare/v0.1.7...v0.1.8) (2019-12-04)
 
 
