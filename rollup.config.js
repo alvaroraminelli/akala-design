@@ -1,9 +1,10 @@
 import typescript from 'rollup-plugin-typescript';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
-import resolve from 'rollup-plugin-node-resolve';
 import replace from 'rollup-plugin-replace';
 import external from "rollup-plugin-peer-deps-external";
+
+import resolve from '@rollup/plugin-node-resolve';
 
 const pkg = require('./package.json');
 const PATHS = require('./paths');
@@ -23,33 +24,36 @@ export default {
   //   }),
     babel({
       exclude: "node_modules/**"
+    }),
+    external(), //specifying the libraries that should be treated as peer dependencies
+    resolve(), // resolving third-party modules and including them in the bundle
+    // commonjs({
+    //   include: 'node_modules/**', // Default: undefined
+    // })
+    // //   commonjs()
+    commonjs({
+      include: 'node_modules/**',
+      // left-hand side can be an absolute path, a path
+      // relative to the current directory, or the name
+      // of a module in node_modules
+      namedExports: {
+        'node_modules/react/index.js': [
+          'cloneElement',
+          'createContext',
+          'Component',
+          'createElement',
+          'isValidElement',
+          'Children',
+          'createRef'
+        ],
+        'node_modules/react-dom/index.js': ['render', 'hydrate', 'findDOMNode'],
+        'node_modules/react-is/index.js': [
+          'isElement',
+          'isValidElementType',
+          'ForwardRef'
+        ]
+      }
     })
-  //   external(), //specifying the libraries that should be treated as peer dependencies
-  //   resolve(), // resolving third-party modules and including them in the bundle
-  //   commonjs()
-  //   commonjs({
-  //     include: 'node_modules/**',
-  //     // left-hand side can be an absolute path, a path
-  //     // relative to the current directory, or the name
-  //     // of a module in node_modules
-  //     namedExports: {
-  //       'node_modules/react/index.js': [
-  //         'cloneElement',
-  //         'createContext',
-  //         'Component',
-  //         'createElement',
-  //         'isValidElement',
-  //         'Children',
-  //         'createRef'
-  //       ],
-  //       'node_modules/react-dom/index.js': ['render', 'hydrate'],
-  //       'node_modules/react-is/index.js': [
-  //         'isElement',
-  //         'isValidElementType',
-  //         'ForwardRef'
-  //       ]
-  //     }
-  //   })
   ]
 }
 

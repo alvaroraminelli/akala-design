@@ -1,1 +1,6 @@
-export Button from './elements/Button/Button';
+export * from './elements/inputs/index'
+export * from './elements/Loader/index'
+export * from './elements/Button/index'
+export Clip from './elements/Clip'
+export Checkbox from './elements/Checkbox'
+export Highlight from './elements/Highlight'
