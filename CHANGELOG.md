@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/alvaroraminelli/akala-design/compare/v0.1.9...v0.1.10) (2019-12-12)
+
+
+### Bug Fixes
+
+* porting old library component library ([4944a18](https://github.com/alvaroraminelli/akala-design/commit/4944a18fa2ca201422f42ab30af78b82ded140ef))
+
 ### [0.1.9](https://github.com/alvaroraminelli/akala-design/compare/v0.1.8...v0.1.9) (2019-12-04)
 
 
